@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shopping List</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS AIzaSyDbElyUzqRxrJl0qEnkxfxDgELe48remfI-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/rangeslider.css" rel="stylesheet">
+
+    
+
+   
+    <style>
+
+    .listName{
+        list-style-type: none;
+        margin-right: 20px;
+        padding-right:10px;
+    }
+
+    #shopping{
+        margin-top:10px;
+    }
+
+    #appTitle{
+
+        text-align: center;
+        background-color: #33b5e5;
+        color: white;
+    }
+
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px; 
+            } 
+        }
+    </style>
+
+
+</head>
+
+<div class="container">
+
+        <div class="jumbotron">
+            <h1 class="h1-responsive">Shopping List</h1>
+            <p class="lead">Make a shopping list</p>
+            <hr class="my-2">
+            
+            
+                   
+            
+              
+        </div>
+
+</div>
+
+<div class="container">
+
+    <div class="card" id="appTitle">
+        <div class="card-body">
+           <h1>Shopping List</h1>
+          
+        </div>
+    </div>
+
+    <!--https://teamtreehouse.com/library/moving-to-an-editing-state video to finish app -->
+
+        <form id="shopping">
+
+            <div class="row">
+
+                <div class="col-4">
+
+                    <div class="md-form">
+                        <input type="text" id="input1" class="form-control">
+                        <label for="input1" >Add Item Title</label>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                     <div class="md-form">
+                        <input type="text" id="input2" class="form-control">
+                        <label for="input2" >Add Item Description</label>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-4">
+
+                     <button type="submit" class="btn btn-primary btn-md" id="submit">Submit</button>
+
+                </div>
+            </div>
+
+
+
+        </form>
+
+        <div id="list"></div>
+
+
+
+</div>
+
+
+
+ <div class="container" id="faq">
+        <form>
+            <p class="h4 text-center mb-4">Contact Us</p>
+
+            <!-- Material input text -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="materialFormContactNameEx" class="form-control">
+                <label for="materialFormContactNameEx">Your name</label>
+            </div>
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormContactEmailEx" class="form-control">
+                <label for="materialFormContactEmailEx">Your email</label>
+            </div>
+            
+            <!-- Material input subject -->
+            <div class="md-form">
+                <i class="fa fa-tag prefix grey-text"></i>
+                <input type="text" id="materialFormContactSubjectEx" class="form-control">
+                <label for="materialFormContactSubjectEx">Subject</label>
+            </div>
+            
+            <!-- Material textarea message -->
+            <div class="md-form">
+                <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
+                <label for="materialFormContactMessageEx">Your message</label>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-secondary" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+            </div>
+        </form>
+    </div>
+<!-- Material form contact -->
+
+
+
+
+
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--  Bootstrap tooltips  -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!--  Bootstrap core JavaScript  -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--  MDB core JavaScript  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/shopping.js"></script>
+   
+
+    <script src="js/rangeslider.min.js"></script>
+
+
+    <script>
+        //Animation init
+        new WOW().init();
+        
+        //Modal
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').focus()
+        })
+        
+        // Material Select Initialization
+        $(document).ready(function() {
+            $('.mdb-select').material_select();
+        });
+        
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
+        });
+    </script>
+    
+</body>
+
+</html>
